@@ -1,0 +1,47 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(8, 50px);
+  grid-template-rows: repeat(8, 50px);
+}
+
+.odd:nth-child(odd) {
+  background-color: #67FD8F;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+.even:nth-child(even) {
+  background-color: #67FD8F;
+  border-radius: 4px;
+  border: 1px solid black;
+}
+
+.cell {
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.cell img {
+    position: absolute;
+    height: 80%;
+}
+
+.dots {
+  position: absolute;
+  background-color: rgba(104, 104, 104, 0.185);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
